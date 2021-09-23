@@ -75,8 +75,7 @@ public class RunRESTClientDemo {
 			// postForEntity as String.class instead of Customer.class
 			newCustomer = restTemplate
 					.postForEntity(appConfig.getRESTURL(),
-					newCustomer,
-							Customer.class)
+							newCustomer, Customer.class)
 					.getBody();
 			logger.info("new customer after request: " + newCustomer);
 
